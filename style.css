@@ -41,20 +41,27 @@ h1 {
     color: #FFFFFF;
 }
 
+h2 {
+    text-align: center;
+    text-decoration: underline;
+}
+
 main {
     text-align: center;
 }
 
 .vault {
     height: 450px;
-    width: 350px;
+    width: 400px;
     background-color: #8B634B;
+    border-radius: 8px;
 }
 
 .search {
     height: 450px;
-    width: 350px;
+    width: 400px;
     background-color: #8B634B;
+    border-radius: 8px;
 }
 
 p {
