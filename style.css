@@ -1,21 +1,6 @@
-* {
-    box-sizing: border-box;
-}
-
-.header {
-    grid-area: header;
-}
-
-.vault {
-    grid-area: vault;
-}
-
-.search {
-    grid-area: search;
-}
-
-.footer {
-    grid-area: footer;
+body {
+    margin: 0;
+    background: #005F61;
 }
 
 .wrapper {
@@ -23,18 +8,81 @@
     gap: 20px;
     grid-template-areas: 
       "header"
+      "intro"
       "vault"
       "search"
       "footer";
 }
 
-body {
-    background-color: #005F61;
+.header {
+    grid-area: header;
+    text-align: center;
+    background: url(images/Untitled\ design.png);
+    background-size: cover;
+    width: 100%;
 }
 
-header {
+.header h1 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 3em;
+}
+
+.intro {
+    grid-area: intro;
+    text-align: center;
+    background: #005F61;
+}
+
+.intro p {
+    color: #FFFFFF;
+    font-family: 'Architects Daughter', cursive;
+    font-size: 18px;
+    letter-spacing: 1.5px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.vault {
+    grid-area: vault;
+    height: 27em;
+    width: 20em;
+    background-color: #5F259F;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px 5px #8B634B;
+    margin: auto;
+    text-align: center;
+}
+
+.search {
+    grid-area: search;
+    height: 27em;
+    width: 20em;
+    background-color: #5F259F;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px 5px #8B634B;
+    margin: auto;
+    text-align: center;
+}
+
+.footer {
+    grid-area: footer;
     text-align: center;
     background-color: #000000;
+    height: 2.8em;
+}
+
+.footer p {
+    font-family: 'Caveat', Arial, serif;
+    font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
 }
 
 h1 {
@@ -44,57 +92,67 @@ h1 {
 }
 
 h2 {
-    text-align: center;
     text-decoration: underline;
-    color: #000000;
+    color: #ffffff;
     font-family: 'Overlock', Arial, serif;
 }
 
 img {
     width: 100%;
-    height: 350px;
+    height: 20em;
     cursor: pointer;
 }
 
-.vault {
-    height: 450px;
-    width: 400px;
-    background-color: #5F259F;
-    border-radius: 8px;
-    box-shadow: 0px 0px 10px 5px #8B634B;
-    margin: auto;
-}
-
-.search {
-    height: 450px;
-    width: 400px;
-    background-color: #5F259F;
-    border-radius: 8px;
-    box-shadow: 0px 0px 10px 5px #8B634B;
-    margin: auto;
-}
-
-p {
-    color: #FFFFFF;
-}
-
-footer {
-    text-align: center;
-    background-color: #000000;
-    height: 3em;
-}
-
-footer p {
-    font-family: 'Caveat', Arial, serif;
-    font-size: 16px;
-}
-
-@media (min-width: 500px) {
+@media (min-width: 550px) {
     .wrapper {
         grid-template-columns: 1fr 1fr;
         grid-template-areas: 
-          "header" "header"
-          "vault" "search"
-          "footer" "footer";
+          "header header"
+          "intro intro"
+          "vault search"
+          "footer footer";
+    }
+
+    .header h1 {
+        margin-top: 30px;
+        margin-bottom: 25px;
+        font-size: 4em;
+    }
+
+    .intro p {
+        font-size: 32px;
+        margin-left: 50px;
+        margin-right: 50px;
+        letter-spacing: 2px;
+    }
+
+    .vault {
+        margin-top: 70px;
+        height: 38em;
+        width: 35em;
+    }
+
+    .search {
+        margin-top: 70px;
+        height: 38em;
+        width: 35em;
+    }
+
+    h2 {
+        font-size: 3em;
+    }
+
+    img {
+        width: 80%;
+        height: 23em;
+    }
+
+    .footer {
+        margin-top: 100px;
+        height: 2.5em;
+    }
+
+    .footer p {
+        font-size: 18px;
     }
 }
