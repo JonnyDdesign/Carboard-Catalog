@@ -14,6 +14,28 @@ body {
       "footer";
 }
 
+.vault-wrapper {
+    display: grid;
+    gap: 20px;
+    grid-template-areas: 
+      "header"
+      "intro"
+      "vault"
+      "search"
+      "footer";
+}
+
+.search-wrapper {
+    display: grid;
+    gap: 20px;
+    grid-template-areas: 
+      "header"
+      "intro"
+      "vault"
+      "search"
+      "footer";
+}
+
 .header {
     grid-area: header;
     text-align: center;
@@ -22,7 +44,35 @@ body {
     width: 100%;
 }
 
+.vault-header {
+    grid-area: header;
+    text-align: center;
+    background: url(images/Untitled\ design.png);
+    background-size: cover;
+    width: 100%;
+}
+
+.search-header {
+    grid-area: header;
+    text-align: center;
+    background: url(images/Untitled\ design.png);
+    background-size: cover;
+    width: 100%;
+}
+
 .header h1 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 3em;
+}
+
+.vault-header h1 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 3em;
+}
+
+.search-header h1 {
     margin-top: 30px;
     margin-bottom: 30px;
     font-size: 3em;
@@ -72,7 +122,27 @@ body {
     height: 2.8em;
 }
 
-.footer p {
+.vault-footer {
+    grid-area: footer;
+    text-align: center;
+    background-color: #000000;
+    height: 2.8em;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+.search-footer {
+    grid-area: footer;
+    text-align: center;
+    background-color: #000000;
+    height: 2.8em;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+.footer, .vault-footer, .search-footer p {
     font-family: 'Caveat', Arial, serif;
     font-size: 16px;
     margin-top: 10px;
@@ -97,10 +167,46 @@ h2 {
     font-family: 'Overlock', Arial, serif;
 }
 
+.randomh2 {
+    text-align: center;
+}
+
+.randomimg {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    height: 500px;
+}
+
 img {
     width: 100%;
     height: 20em;
     cursor: pointer;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td, th {
+    border: 2px solid #000000;
+    text-align: left;
+    padding: 8px;
+    color: #ffffff;
+}
+  
+tr:nth-child(even) {
+    background-color: #8B634B;
+}
+
+main input {
+    font-size: 28px;
+    margin-top: 50px;
+    margin-left: 4em;
+    margin-right: 4em;
+    border-radius: 10px;
 }
 
 @media (min-width: 550px) {
