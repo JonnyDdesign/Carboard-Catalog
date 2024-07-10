@@ -17,8 +17,13 @@
         <h1><a href="index.html">Cardboard Catalog</a></h1>
     </header>
     <main>
-        <input type="text" placeholder="Search player, team, year, etc." size="70">
-        <input type="submit" value="Submit">
+      <form id="searchForm"">
+        <input type="text" id ="playerName" placeholder="Player Name">
+        <input type="text" id="team" placeholder="Team">
+        <input type="number" id="year" placeholder="Year">
+        <button type="submit">Search</button>
+      </form>
+      <div id="results"></div>
     </main>
     <section>
         <h2 class="randomh2">Random Card of the Day</h2>
