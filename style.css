@@ -202,14 +202,15 @@ tr:nth-child(even) {
 }
 
 main input {
-    font-size: 28px;
-    margin-top: 50px;
-    margin-left: 4em;
-    margin-right: 4em;
+    width: auto;
+    font-size: 18px;
+    margin-top: 30px;
+    margin-left: 2em;
+    margin-right: 0;
     border-radius: 10px;
 }
 
-@media (min-width: 550px) {
+@media screen and (min-width: 550px) {
     .wrapper {
         grid-template-columns: 1fr 1fr;
         grid-template-areas: 
@@ -245,12 +246,73 @@ main input {
     }
 
     h2 {
-        font-size: 3em;
+        font-size: 2em;
     }
 
     img {
         width: 80%;
         height: 23em;
+    }
+
+    .randomimg {
+        width: 50%;
+        height: 400px;
+    }
+
+    main input {
+        font-size: 20px;
+        margin-top: 30px;
+        margin-left: 2em;
+        margin-right: 0;
+        border-radius: 10px;
+    }
+
+    .footer {
+        margin-top: 100px;
+        height: 2.5em;
+    }
+
+    .footer p {
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-width: 551px) {
+    .wrapper {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+          "header header"
+          "intro intro"
+          "vault search"
+          "footer footer";
+    }
+
+    .search {
+        margin-top: 70px;
+        height: 38em;
+        width: 35em;
+    }
+
+    h2 {
+        font-size: 2em;
+    }
+
+    img {
+        width: 80%;
+        height: 23em;
+    }
+
+    .randomimg {
+        width: 50%;
+        height: 400px;
+    }
+
+    main input {
+        font-size: 20px;
+        margin-top: 30px;
+        margin-left: 2em;
+        margin-right: 0;
+        border-radius: 10px;
     }
 
     .footer {
