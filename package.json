@@ -1,0 +1,27 @@
+{
+  "name": "cardboard-catalog",
+  "version": "1.0.0",
+  "description": "A web app to search and store trading cards in your personal collection",
+  "main": "server.js",
+  "scripts": {
+    "test": "node server.js",
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jonnyddesign/cardboard-catalog.git"
+  },
+  "keywords": [],
+  "author": "JD",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jonnyddesign/cardboard-catalog/issues"
+  },
+  "homepage": "https://github.com/jonnyddesign/cardboard-catalog#readme",
+  "dependencies": {
+    "express": "4.19.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  }
+}
