@@ -1,6 +1,7 @@
 const express = require('express');
+const path = require('path');
 const app = express();
-const port = 3000; // or any port number you prefer
+const port = 3000;
 
 // Sample data for demonstration
 const baseballCards = [
@@ -11,6 +12,14 @@ const baseballCards = [
 
 // Middleware to parse JSON bodies
 app.use(express.json());
+
+// Serve static files fromthe "public" directory
+app.use(express.static(path.join(_dirname, 'public')));
+
+// Define a route for the root URL
+app.get('/', (req, res) => {
+    res.sendFile(path.join(_dirname, 'public', 'index.html'));
+});
 
 // Search endpoint
 app.get('/api/search', (req, res) => {
