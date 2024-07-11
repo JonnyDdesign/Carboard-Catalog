@@ -14,11 +14,11 @@ const baseballCards = [
 app.use(express.json());
 
 // Serve static files fromthe "public" directory
-app.use(express.static(path.join(_dirname, 'public')));
+app.use(express.static(path.join(__dirname, 'public')));
 
 // Define a route for the root URL
 app.get('/', (req, res) => {
-    res.sendFile(path.join(_dirname, 'public', 'index.html'));
+    res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
 
 // Search endpoint
