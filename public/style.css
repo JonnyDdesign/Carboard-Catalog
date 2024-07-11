@@ -39,7 +39,7 @@ body {
 .header {
     grid-area: header;
     text-align: center;
-    background: url(../images/Untitled\ design.png);
+    background: url(images/Untitled\ design.png);
     background-size: cover;
     width: 100%;
 }
@@ -47,7 +47,7 @@ body {
 .vault-header {
     grid-area: header;
     text-align: center;
-    background: url(../images/Untitled\ design.png);
+    background: url(images/Untitled\ design.png);
     background-size: cover;
     width: 100%;
 }
@@ -55,7 +55,7 @@ body {
 .search-header {
     grid-area: header;
     text-align: center;
-    background: url(../images/Untitled\ design.png);
+    background: url(images/Untitled\ design.png);
     background-size: cover;
     width: 100%;
 }
