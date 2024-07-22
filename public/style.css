@@ -274,7 +274,29 @@ main input {
 
     .footer p {
         font-size: 18px;
+        padding-top: 20px;
+        padding-bottom: 10px;
     }
+
+    footer a:link {
+        color: red;
+        text-decoration: none;
+      }
+      
+      footer a:visited {
+        color: red;
+        text-decoration: none;
+      }
+      
+      footer a:hover {
+        color: white;
+        text-decoration: underline;
+      }
+      
+      footer a:active {
+        color: blue;
+        text-decoration: underline;
+      }
 }
 
 @media screen and (min-width: 551px) {
@@ -322,5 +344,27 @@ main input {
 
     .footer p {
         font-size: 18px;
+        padding-top: 20px;
+        padding-bottom: 10px;
     }
+
+    footer a:link {
+        color: red;
+        text-decoration: none;
+      }
+      
+      footer a:visited {
+        color: red;
+        text-decoration: none;
+      }
+      
+      footer a:hover {
+        color: white;
+        text-decoration: underline;
+      }
+      
+      footer a:active {
+        color: blue;
+        text-decoration: underline;
+      }
 }
