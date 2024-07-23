@@ -119,27 +119,18 @@ body {
     grid-area: footer;
     text-align: center;
     background-color: #000000;
-    height: 2.8em;
 }
 
 .vault-footer {
     grid-area: footer;
     text-align: center;
     background-color: #000000;
-    height: 2.8em;
-    position: absolute;
-    width: 100%;
-    bottom: 0;
 }
 
 .search-footer {
     grid-area: footer;
     text-align: center;
     background-color: #000000;
-    height: 2.8em;
-    position: absolute;
-    width: 100%;
-    bottom: 0;
 }
 
 .footer, .vault-footer, .search-footer p {
@@ -175,8 +166,8 @@ h2 {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
-    height: 500px;
+    width: 70%;
+    height: 400px;
 }
 
 img {
@@ -234,15 +225,15 @@ main input {
     }
 
     .vault {
-        margin-top: 70px;
         height: 38em;
         width: 35em;
+        margin: 50px;
     }
 
     .search {
-        margin-top: 70px;
         height: 38em;
         width: 35em;
+        margin: 50px;
     }
 
     h2 {
@@ -299,7 +290,7 @@ main input {
       }
 }
 
-@media screen and (min-width: 551px) {
+@media screen and (min-width: 769px) {
     .wrapper {
         grid-template-columns: 1fr 1fr;
         grid-template-areas: 
@@ -307,12 +298,6 @@ main input {
           "intro intro"
           "vault search"
           "footer footer";
-    }
-
-    .search {
-        margin-top: 70px;
-        height: 38em;
-        width: 35em;
     }
 
     h2 {
